@@ -104,11 +104,11 @@ If $\mathcal{M}_{\text{truth}}(r(d), c(d)) = -1$, the cell is marked as an obsta
 
 A cell $(r, c)$ is classified as a **frontier cell** for drone $i$ if and only if it is confirmed free in $\mathcal{M}_i$, but is adjacent to at least one unexplored cell within its 8-connected neighborhood ($\mathcal{N}_8$):
 
-$$\mathcal{F}_i^{(t)} = \left\{ (r, c) \in \mathbb{Z}^2 \;\middle|\; \mathcal{M}_i^{(t)}(r, c) = 1 \;\land\; \exists (dr, dc) \in \mathcal{N}_8 \text{ s.t. } \mathcal{M}_i^{(t)}(r+dr, c+dc) = 0 \right\}$$
+$$\mathcal{F}_i^{(t)} = \lbrace (r, c) \in \mathbb{Z}^2 \mid \mathcal{M}_i^{(t)}(r, c) = 1 \land \exists (dr, dc) \in \mathcal{N}_8 \text{ s.t. } \mathcal{M}_i^{(t)}(r+dr, c+dc) = 0 \rbrace$$
 
 where the 8-connected neighborhood displacement set $\mathcal{N}_8$ is deterministically ordered:
 
-$$\mathcal{N}_8 = \{(0, 1), (1, 1), (1, 0), (1, -1), (0, -1), (-1, -1), (-1, 0), (-1, 1)\}$$
+$$\mathcal{N}_8 = \lbrace (0, 1), (1, 1), (1, 0), (1, -1), (0, -1), (-1, -1), (-1, 0), (-1, 1) \rbrace$$
 
 ---
 
@@ -133,7 +133,7 @@ The global repulsive pheromone field $\tau(r, c) \in \mathbb{R}_{\ge 0}$ evolves
 
 Drone $i$ executes a Single-Source Dijkstra search starting from its current coordinate $(sr, sc)$ across all known free cells $\mathcal{M}_i(r, c) = 1$. The step cost is $1.0$ for orthogonal transitions and $\sqrt{2} \approx 1.41421356$ for diagonal transitions, enforced with strict corner clearance:
 
-$$\text{LegalDiagonal}((r, c) \to (r+dr, c+dc)) \iff \mathcal{M}_i(r, c+dc) = 1 \;\land\; \mathcal{M}_i(r+dr, c) = 1$$
+$$\text{LegalDiagonal}((r, c) \to (r+dr, c+dc)) \iff \mathcal{M}_i(r, c+dc) = 1 \land \mathcal{M}_i(r+dr, c) = 1$$
 
 For every reachable candidate frontier $f \in \mathcal{F}_i^{(t)}$, total path cost is evaluated by integrating the pheromone trail accumulated along the shortest path $\Pi(sr \to f)$:
 
@@ -176,11 +176,11 @@ If two candidate frontiers yield identical cost $\mathcal{J}(f)$ within floating
 Quantitative performance is evaluated using four primary benchmark metrics:
 
 | Symbol | Metric Name | Mathematical Formula | Physical Meaning |
-| :---: | :--- | :---: | :--- |
-| $\mathcal{C}$ | **Observed Coverage** | $\frac{\left|\mathcal{M}_{\text{observed}} \cap \mathcal{M}_{\text{reachable}}\right|}{\left|\mathcal{M}_{\text{reachable}}\right|} \times 100\%$ | Percentage of reachable free cells successfully swept by the swarm's sensors. |
+| :---: | :--- | :--- | :--- |
+| $\mathcal{C}$ | **Observed Coverage** | $\frac{\lvert \mathcal{M}_{\text{observed}} \cap \mathcal{M}_{\text{reachable}} \rvert}{\lvert \mathcal{M}_{\text{reachable}} \rvert} \times 100\%$ | Percentage of reachable free cells successfully swept by the swarm's sensors. |
 | $\mathcal{R}$ | **Revisit Ratio** | $\frac{V_{\text{total}} - V_{\text{unique}}}{V_{\text{total}}} \times 100\%$ | Exploration inefficiency metric; proportion of physical footsteps that re-enter previously visited cells. |
-| $\mathcal{O}$ | **Overlap Ratio** | $\frac{\left|\left\{ c \in \mathcal{V}_{\text{unique}} \;\middle|\; |\text{Visitors}(c)| > 1 \right\}\right|}{|\mathcal{V}_{\text{unique}}|} \times 100\%$ | Spatial redundancy; percentage of visited cells traversed by more than one distinct drone. |
-| $\mathcal{S}$ | **Completion Steps** | $\min \{ t \ge 0 \mid \mathcal{C}(t) = 100\% \}$ | Number of timesteps required to achieve full 100% coverage. Evaluates to `N/A` if premature termination occurs. |
+| $\mathcal{O}$ | **Overlap Ratio** | $\frac{\lvert \lbrace c \in \mathcal{V}_{\text{unique}} \colon \lvert \text{Visitors}(c) \rvert > 1 \rbrace \rvert}{\lvert \mathcal{V}_{\text{unique}} \rvert} \times 100\%$ | Spatial redundancy; percentage of visited cells traversed by more than one distinct drone. |
+| $\mathcal{S}$ | **Completion Steps** | $\min \lbrace t \ge 0 \colon \mathcal{C}(t) = 100\% \rbrace$ | Number of timesteps required to achieve full 100% coverage. Evaluates to `N/A` if premature termination occurs. |
 
 ---
 
@@ -394,31 +394,38 @@ classDiagram
 
 ```mermaid
 stateDiagram-v2
-    [*] --> DEFAULT : Application Startup
+    state "DEFAULT (Transform)" as STATE_DEFAULT
+    state "OBSTACLE" as STATE_OBSTACLE
+    state "LINE" as STATE_LINE
+    state "REMOVE_LINE" as STATE_REMOVE_LINE
+    state "ADD_DRONE" as STATE_ADD_DRONE
+    state "REMOVE_DRONE" as STATE_REMOVE_DRONE
 
-    DEFAULT --> OBSTACLE : Select Tool Wall
-    DEFAULT --> LINE : Select Tool Draw Line
-    DEFAULT --> REMOVE_LINE : Select Tool Remove Line
-    DEFAULT --> ADD_DRONE : Select Tool Add Drone
-    DEFAULT --> REMOVE_DRONE : Select Tool Remove Drone
+    [*] --> STATE_DEFAULT : Application Startup
 
-    OBSTACLE --> DEFAULT : Select Transform
-    LINE --> DEFAULT : Select Transform
-    REMOVE_LINE --> DEFAULT : Select Transform
-    ADD_DRONE --> DEFAULT : Select Transform
-    REMOVE_DRONE --> DEFAULT : Select Transform
+    STATE_DEFAULT --> STATE_OBSTACLE : Select Tool Wall
+    STATE_DEFAULT --> STATE_LINE : Select Tool Draw Line
+    STATE_DEFAULT --> STATE_REMOVE_LINE : Select Tool Remove Line
+    STATE_DEFAULT --> STATE_ADD_DRONE : Select Tool Add Drone
+    STATE_DEFAULT --> STATE_REMOVE_DRONE : Select Tool Remove Drone
 
-    note right of DEFAULT
+    STATE_OBSTACLE --> STATE_DEFAULT : Select Transform
+    STATE_LINE --> STATE_DEFAULT : Select Transform
+    STATE_REMOVE_LINE --> STATE_DEFAULT : Select Transform
+    STATE_ADD_DRONE --> STATE_DEFAULT : Select Transform
+    STATE_REMOVE_DRONE --> STATE_DEFAULT : Select Transform
+
+    note right of STATE_DEFAULT
         Pan Camera (Middle Click or Drag)
         Zoom In/Out (Scroll Wheel)
         Relocate Starting Drone (Primary Drag)
     end note
 
-    note right of OBSTACLE
+    note right of STATE_OBSTACLE
         Left Click: Toggle Obstacle Cell (-1 / 0)
     end note
 
-    note right of LINE
+    note right of STATE_LINE
         Click & Drag: Bresenham Line Drawing
         Constructs Continuous Linear Obstacles
     end note
@@ -463,7 +470,7 @@ This `final` class serves as the computational engine of the exploration algorit
 - `private Point yieldStep(int id, Point[] next, int tick)`:
   Deadlock recovery procedure. If a drone is blocked (`blockedCount >= 1`), it inspects its 8-connected neighborhood for an adjacent unoccupied free cell to yield and relieve spatial congestion.
 - `private void simulate()`:
-  Main discrete-time simulation loop ($t = 0 \dots \text{MAX\_STEPS}-1$). Coordinates sensing, route planning, conflict arbitration, pheromone evaporation, pheromone deposition, and completion checks.
+  Main discrete-time simulation loop from timestep $t = 0$ up to `MAX_STEPS - 1`. Coordinates sensing, route planning, conflict arbitration, pheromone evaporation, pheromone deposition, and completion checks.
 
 ---
 
