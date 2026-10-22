@@ -1,4 +1,5 @@
 # Decentralized Swarm Coverage Using Frontier-Based Exploration and Repulsive Pheromone Stigmergy (FBE-RPS)
+###Sugiarto Cokrowibowo
 
 [![Java Version](https://img.shields.io/badge/Java-24-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://openjdk.org/)
 [![JavaFX](https://img.shields.io/badge/JavaFX-21.0.6-FF8800?style=for-the-badge&logo=java&logoColor=white)](https://openjfx.io/)
