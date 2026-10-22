@@ -664,10 +664,135 @@ If you utilize this source code, algorithmic model, or benchmark dataset in your
 }
 ```
 
-### Key References:
-1. **Yamauchi, B. (1997).** *A frontier-based approach for autonomous exploration.* Proceedings 1997 IEEE International Symposium on Computational Intelligence in Robotics and Automation, pp. 146-151.
-2. **Dorigo, M., & Di Caro, G. (1999).** *Ant colony optimization: a new meta-heuristic.* Proceedings of the 1999 Congress on Evolutionary Computation, 2, pp. 1470-1477.
-3. **Sauter, J. A., et al. (2005).** *Digital Pheromones for Swarm Robotics: Coverage and Target Tracking.* IEEE Swarm Intelligence Symposium.
+### References
+
+[1] P. C. Shih, Y. C. Chiang, J. J. Hu, K. T. Lin, and L. C. Fu, “Autonomous exploration of mobile robot equipped with LiDAR for high-quality reconstruction in large-scale indoor environments,” *Mechatronics*, vol. 112, no. August, p. 103409, 2025, doi: [10.1016/j.mechatronics.2025.103409](https://doi.org/10.1016/j.mechatronics.2025.103409).
+
+[2] Y. Zhao, J. Zhang, and C. Zhang, “Deep-learning based autonomous-exploration for UAV navigation,” *Knowledge-Based Syst.*, vol. 297, no. May, p. 111925, 2024, doi: [10.1016/j.knosys.2024.111925](https://doi.org/10.1016/j.knosys.2024.111925).
+
+[3] Y. Zhou, L. Yan, Y. Han, L. Zhu, Y. Zhao, and H. Xie, “HFCH: Hybrid frontier guided fast UAV autonomous exploration for complete and high-quality mapping in unknown environment,” *Adv. Eng. Informatics*, vol. 69, no. PA, p. 103834, 2026, doi: [10.1016/j.aei.2025.103834](https://doi.org/10.1016/j.aei.2025.103834).
+
+[4] Y. Wang, H. Liu, X. Shao, W. Yao, and Y. Chen, “GA-FMP: An efficient greedy-accelerated fast marching planner for autonomous UGV exploration,” *Inf. Sci. (Ny).*, vol. 729, no. July 2025, p. 122873, 2026, doi: [10.1016/j.ins.2025.122873](https://doi.org/10.1016/j.ins.2025.122873).
+
+[5] C. Gao et al., “A UAV-based explore-then-exploit system for autonomous indoor facility inspection and scene reconstruction,” *Autom. Constr.*, vol. 148, no. January, p. 104753, 2023, doi: [10.1016/j.autcon.2023.104753](https://doi.org/10.1016/j.autcon.2023.104753).
+
+[6] S. N. L. K. N. Azmi, N. I. A. Apandi, M. Rafique, and N. A. Muhammad, “Autonomous Mobile Robots Path Planning with Integrative Edge Cloud-Based Ant Colony Optimization,” *Int. J. Robot. Control Syst.*, vol. 5, no. 3, pp. 1866–1885, 2025, doi: [10.31763/ijrcs.v5i3.1884](https://doi.org/10.31763/ijrcs.v5i3.1884).
+
+[7] Y. Chang, Y. Cheng, U. Manzoor, and J. Murray, “A review of UAV autonomous navigation in GPS-denied environments,” *Rob. Auton. Syst.*, vol. 170, no. September, p. 104533, 2023, doi: [10.1016/j.robot.2023.104533](https://doi.org/10.1016/j.robot.2023.104533).
+
+[8] A. Patel et al., “Towards field deployment of MAVs in adaptive exploration of GPS-denied subterranean environments,” *Rob. Auton. Syst.*, vol. 176, no. March, p. 104663, 2024, doi: [10.1016/j.robot.2024.104663](https://doi.org/10.1016/j.robot.2024.104663).
+
+[9] C. Cruz Ulloa, J. Álvarez, J. del Cerro, and A. Barrientos, “Vision-based collaborative robots for exploration in uneven terrains,” *Mechatronics*, vol. 100, no. March, p. 103184, 2024, doi: [10.1016/j.mechatronics.2024.103184](https://doi.org/10.1016/j.mechatronics.2024.103184).
+
+[10] K. Pongsirijinda et al., “Distributed multi-robot potential-field-based exploration with submap-based mapping and noise-augmented strategy,” *Rob. Auton. Syst.*, vol. 179, no. November 2023, p. 104752, 2024, doi: [10.1016/j.robot.2024.104752](https://doi.org/10.1016/j.robot.2024.104752).
+
+[11] L. Chang, L. Shan, W. Zhang, and Y. Dai, “Hierarchical multi-robot navigation and formation in unknown environments via deep reinforcement learning and distributed optimization,” *Robot. Comput. Integr. Manuf.*, vol. 83, no. January, p. 102570, 2023, doi: [10.1016/j.rcim.2023.102570](https://doi.org/10.1016/j.rcim.2023.102570).
+
+[12] İ. Güven and E. Yanmaz, “Multi-objective path planning for multi-UAV connectivity and area coverage,” *Ad Hoc Networks*, vol. 160, no. April, p. 103520, 2024, doi: [10.1016/j.adhoc.2024.103520](https://doi.org/10.1016/j.adhoc.2024.103520).
+
+[13] J. Yu, H. Zhang, and Y. Zhang, “Distributed UAV swarms for 3D urban area coverage with incomplete information using event-triggered hierarchical reinforcement learning,” *Comput. Ind. Eng.*, vol. 199, no. September 2024, p. 110734, 2025, doi: [10.1016/j.cie.2024.110734](https://doi.org/10.1016/j.cie.2024.110734).
+
+[14] Q. Sun, M. Chi, Z. W. Liu, and D. He, “Observer-Based coverage control of unicycle mobile robot network in dynamic environment,” *J. Franklin Inst.*, vol. 360, no. 12, pp. 9015–9027, 2023, doi: [10.1016/j.jfranklin.2022.06.050](https://doi.org/10.1016/j.jfranklin.2022.06.050).
+
+[15] P. Ghassemi and S. Chowdhury, “Multi-robot task allocation in disaster response: Addressing dynamic tasks with deadlines and robots with range and payload constraints,” *Rob. Auton. Syst.*, vol. 147, p. 103905, 2022, doi: [10.1016/j.robot.2021.103905](https://doi.org/10.1016/j.robot.2021.103905).
+
+[16] H. Azpúrua et al., “A Survey on the autonomous exploration of confined subterranean spaces: Perspectives from real-word and industrial robotic deployments,” *Rob. Auton. Syst.*, vol. 160, p. 104304, 2023, doi: [10.1016/j.robot.2022.104304](https://doi.org/10.1016/j.robot.2022.104304).
+
+[17] V. P. Tran, M. A. Garratt, K. Kasmarik, S. G. Anavatti, and S. Abpeikar, “Frontier-led swarming: Robust multi-robot coverage of unknown environments,” *Swarm Evol. Comput.*, vol. 75, no. August, p. 101171, 2022, doi: [10.1016/j.swevo.2022.101171](https://doi.org/10.1016/j.swevo.2022.101171).
+
+[18] M. Zhao, H. Lu, S. Cheng, S. Yang, and Y. Shi, “A multi-robot cooperative exploration algorithm considering working efficiency and working load,” *Appl. Soft Comput.*, vol. 128, p. 109482, 2022, doi: [10.1016/j.asoc.2022.109482](https://doi.org/10.1016/j.asoc.2022.109482).
+
+[19] Y. Ning, T. Li, C. Yao, W. Du, and Y. Zhang, “HMS-RRT: A novel hybrid multi-strategy rapidly-exploring random tree algorithm for multi-robot collaborative exploration in unknown environments,” *Expert Syst. Appl.*, vol. 247, no. July 2023, p. 123238, 2024, doi: [10.1016/j.eswa.2024.123238](https://doi.org/10.1016/j.eswa.2024.123238).
+
+[20] Y. Xue, C. K. Tan, and W. P. Wong, “Energy-aware multi-robot exploration and coverage in fragmented unknown environments using collaborative reinforcement learning,” *Results Eng.*, vol. 29, no. January, p. 109171, 2026, doi: [10.1016/j.rineng.2026.109171](https://doi.org/10.1016/j.rineng.2026.109171).
+
+[21] J. Fan, X. Zhang, and Y. Zou, “Hierarchical path planner for unknown space exploration using reinforcement learning-based intelligent frontier selection,” *Expert Syst. Appl.*, vol. 230, no. February, p. 120630, 2023, doi: [10.1016/j.eswa.2023.120630](https://doi.org/10.1016/j.eswa.2023.120630).
+
+[22] Y. Jiao and G. Wang, “Firefly-Pareto clustering-based frontier exploration (FPCFE) for multi-Mobile robot systems,” *Appl. Soft Comput.*, vol. 202, no. PC, p. 115969, 2026, doi: [10.1016/j.asoc.2026.115969](https://doi.org/10.1016/j.asoc.2026.115969).
+
+[23] X. Sun, S. Deng, B. Tong, S. Wang, C. Zhang, and Y. Jiang, “Hierarchical framework for mobile robots to effectively and autonomously explore unknown environments,” *ISA Trans.*, vol. 134, pp. 1–15, 2023, doi: [10.1016/j.isatra.2022.09.005](https://doi.org/10.1016/j.isatra.2022.09.005).
+
+[24] R. Wang, J. Zhang, M. Lyu, C. Yan, and Y. Chen, “An improved frontier-based robot exploration strategy combined with deep reinforcement learning,” *Rob. Auton. Syst.*, vol. 181, no. April 2023, p. 104783, 2024, doi: [10.1016/j.robot.2024.104783](https://doi.org/10.1016/j.robot.2024.104783).
+
+[25] M. Luperto, M. Tellaroli, M. Antonazzi, and N. Basilico, “Multi-robot rendezvous in communication-restricted unknown environments via backtracking and semantic frontier-based exploration,” *Rob. Auton. Syst.*, vol. 194, no. July, p. 105137, 2025, doi: [10.1016/j.robot.2025.105137](https://doi.org/10.1016/j.robot.2025.105137).
+
+[26] M. Sardar, D. Das, and S. Mukhopadhyaya, “Grid exploration by a swarm of autonomous robots with minimum repetitions,” *Theor. Comput. Sci.*, vol. 933, pp. 67–87, 2022, doi: [10.1016/j.tcs.2022.08.029](https://doi.org/10.1016/j.tcs.2022.08.029).
+
+[27] Z. Shang et al., “DEBS: Decentralized Exploration planning for multi-UAV systems using Bio-inspired Self-aggregation mechanism,” *Phys. Commun.*, vol. 73, no. July, p. 102898, 2025, doi: [10.1016/j.phycom.2025.102898](https://doi.org/10.1016/j.phycom.2025.102898).
+
+[28] H. Zhao, Y. Guo, Y. Liu, and J. Jin, “Multirobot unknown environment exploration and obstacle avoidance based on a Voronoi diagram and reinforcement learning,” *Expert Syst. Appl.*, vol. 264, no. November 2024, p. 125900, 2025, doi: [10.1016/j.eswa.2024.125900](https://doi.org/10.1016/j.eswa.2024.125900).
+
+[29] M. Zhu, Z. Liu, W. Li, S. Wang, and Q. Zhang, “Improved wavefront frontier detection-utility value task allocation for multi-robot collaborative environmental exploration,” *Autom. Constr.*, vol. 182, no. June 2025, p. 106740, 2026, doi: [10.1016/j.autcon.2025.106740](https://doi.org/10.1016/j.autcon.2025.106740).
+
+[30] A. Boldini, M. Civitella, and M. Porfiri, “Stigmergy: from mathematical modelling to control,” *R. Soc. Open Sci.*, vol. 11, no. 9, p. 240845, 2024, doi: [10.1098/rsos.240845](https://doi.org/10.1098/rsos.240845).
+
+[31] D. Zhang and H. Duan, “Variational resolution probability maps for multi-UAV search tasks with changeable searching behaviors,” *Aerosp. Sci. Technol.*, vol. 155, no. P2, p. 109669, 2024, doi: [10.1016/j.ast.2024.109669](https://doi.org/10.1016/j.ast.2024.109669).
+
+[32] H. Duan, M. Huo, and Y. Fan, “From animal collective behaviors to swarm robotic cooperation,” *Natl. Sci. Rev.*, vol. 10, no. 5, p. nwad040, 2023, doi: [10.1093/nsr/nwad040](https://doi.org/10.1093/nsr/nwad040).
+
+[33] B. Sahu, P. Kumar Das, and M. ranjan Kabat, “Multi-robot cooperation and path planning for stick transporting using improved Q-learning and democratic robotics PSO,” *J. Comput. Sci.*, vol. 60, no. February, p. 101637, 2022, doi: [10.1016/j.jocs.2022.101637](https://doi.org/10.1016/j.jocs.2022.101637).
+
+[34] Y. Li, Z. Zhang, Q. Sun, and Y. Huang, “A distributed framework for multiple UAV cooperative target search under dynamic environment,” *J. Franklin Inst.*, vol. 361, no. 8, p. 106810, 2024, doi: [10.1016/j.jfranklin.2024.106810](https://doi.org/10.1016/j.jfranklin.2024.106810).
+
+[35] C. R. Tinoco, L. G. A. Martins, and G. M. B. Oliveira, “PheroCom: Decentralised and asynchronous robot swarm coordination framework based on virtual pheromone and vibroacoustic communication,” *Swarm Evol. Comput.*, vol. 99, no. September, p. 102083, 2025, doi: [10.1016/j.swevo.2025.102083](https://doi.org/10.1016/j.swevo.2025.102083).
+
+[36] H. Ardiny and A. M. Beigzadeh, “Enhancing radioactive environment exploration with bio-inspired swarm robotics: A comparative analysis of Lévy flight and stigmergy methods,” *Rob. Auton. Syst.*, vol. 181, no. August, p. 104794, 2024, doi: [10.1016/j.robot.2024.104794](https://doi.org/10.1016/j.robot.2024.104794).
+
+[37] V. P. Tran, M. A. Garratt, K. Kasmarik, and S. G. Anavatti, “Dynamic Frontier-Led Swarming: Multi-Robot Repeated Coverage in Dynamic Environments,” *IEEE/CAA J. Autom. Sin.*, vol. 10, no. 3, pp. 646–661, 2023, doi: [10.1109/JAS.2023.123087](https://doi.org/10.1109/JAS.2023.123087).
+
+[38] H. J. M. Lopes and D. A. Lima, “Surveillance task optimized by Evolutionary shared Tabu Inverted Ant Cellular Automata Model for swarm robotics navigation control,” *Results Control Optim.*, vol. 8, no. June, p. 100141, 2022, doi: [10.1016/j.rico.2022.100141](https://doi.org/10.1016/j.rico.2022.100141).
+
+[39] H. Zhang, H. Ma, B. W. Mersha, X. Zhang, and Y. Jin, “Distributed cooperative search method for multi-UAV with unstable communications,” *Appl. Soft Comput.*, vol. 148, no. February, p. 110592, 2023, doi: [10.1016/j.asoc.2023.110592](https://doi.org/10.1016/j.asoc.2023.110592).
+
+[40] X. Wang, H. Wang, Z. Lv, and J. Tang, “PISC: Pheromone-inspired Self-organized Collective Cooperation,” *Chaos, Solitons and Fractals*, vol. 208, no. P3, p. 118219, 2026, doi: [10.1016/j.chaos.2026.118219](https://doi.org/10.1016/j.chaos.2026.118219).
+
+[41] K. Kim and J. Kim, “Efficient graph-based area partitioning for balanced multi-robot coverage path planning,” *Rob. Auton. Syst.*, vol. 201, no. January, p. 105445, 2026, doi: [10.1016/j.robot.2026.105445](https://doi.org/10.1016/j.robot.2026.105445).
+
+[42] L. Li et al., “Intelligent multi-robot exploration in non-exposed spaces: methods and challenges,” *Artif. Intell. Rev.*, vol. 58, no. 12, 2025, doi: [10.1007/s10462-025-11395-4](https://doi.org/10.1007/s10462-025-11395-4).
+
+[43] J. Zheng, A. Wang, C. Jia, F. Shi, X. Cheng, and M. Zhao, “DTORS: Fast autonomous exploration based on Dynamic Trajectory Optimization and Revisitable Strategy,” *Rob. Auton. Syst.*, vol. 204, no. June, p. 105564, 2026, doi: [10.1016/j.robot.2026.105564](https://doi.org/10.1016/j.robot.2026.105564).
+
+[44] A. Hierholz, V. Reß, N. Hentschel, A. Gienger, N. Haala, and O. Sawodny, “Active visual SLAM using potential fields and model predictive control,” *Control Eng. Pract.*, vol. 172, no. March, p. 106897, 2026, doi: [10.1016/j.conengprac.2026.106897](https://doi.org/10.1016/j.conengprac.2026.106897).
+
+[45] Q. Zou, J. Liu, M. Lin, Y. Wang, and F. Wang, “MCVP: Multi-channel viewpoint planner for efficient exploration and mapping of complex 3D environments,” *Biomim. Intell. Robot.*, vol. 6, no. 2, p. 100303, 2026, doi: [10.1016/j.birob.2026.100303](https://doi.org/10.1016/j.birob.2026.100303).
+
+[46] Y. Zhou et al., “HALE: a hierarchical autonomous exploration framework for UAVs with limited field-of-view in large-span environments,” *Expert Syst. Appl.*, vol. 329, no. January, p. 132979, 2026, doi: [10.1016/j.eswa.2026.132979](https://doi.org/10.1016/j.eswa.2026.132979).
+
+[47] Y. Pan et al., “Developing smart MAVs for autonomous inspection in underground constructions,” *Results Eng.*, vol. 30, no. March, p. 110394, 2026, doi: [10.1016/j.rineng.2026.110394](https://doi.org/10.1016/j.rineng.2026.110394).
+
+[48] K. A. rahman Youssefi and W. Elmenreich, “Coverage exploration of unknown obstacle-cluttered environments using a swarm of ground robots,” *Appl. Soft Comput.*, vol. 185, no. PA, p. 113964, 2025, doi: [10.1016/j.asoc.2025.113964](https://doi.org/10.1016/j.asoc.2025.113964).
+
+[49] S. Zhao and S. H. Hwang, “Complete coverage path planning scheme for autonomous navigation ROS-based robots,” *ICT Express*, vol. 10, no. 1, pp. 83–89, 2024, doi: [10.1016/j.icte.2023.06.009](https://doi.org/10.1016/j.icte.2023.06.009).
+
+[50] P. Quin, D. D. K. Nguyen, T. L. Vu, A. Alempijevic, and G. Paul, “Approaches for Efficiently Detecting Frontier Cells in Robotics Exploration,” *Front. Robot. AI*, vol. 8, no. February, pp. 1–15, 2021, doi: [10.3389/frobt.2021.616470](https://doi.org/10.3389/frobt.2021.616470).
+
+[51] R. Ghanem, I. M. Ali, S. Abpeikar, K. Kasmarik, and M. Garratt, “Optimizing and predicting swarming collective motion performance for coverage problems solving: A simulation-optimization approach,” *Eng. Appl. Artif. Intell.*, vol. 139, no. PA, p. 109522, 2025, doi: [10.1016/j.engappai.2024.109522](https://doi.org/10.1016/j.engappai.2024.109522).
+
+[52] M. Boldrer, L. Palopoli, and D. Fontanelli, “A unified Lloyd-based framework for multi-agent collective behaviours,” *Rob. Auton. Syst.*, vol. 156, p. 104207, 2022, doi: [10.1016/j.robot.2022.104207](https://doi.org/10.1016/j.robot.2022.104207).
+
+[53] Y. Tsunoda et al., “Power in numbers: Primitive algorithm for swarm robot navigation in unknown environments,” *Rob. Auton. Syst.*, vol. 198, no. January, p. 105329, 2026, doi: [10.1016/j.robot.2026.105329](https://doi.org/10.1016/j.robot.2026.105329).
+
+[54] J. Bayer and J. Faigl, “Decentralized multi-robot exploration under low-bandwidth communications,” *arXiv preprint*, pp. 1–27, 2026.
+
+[55] C. Jimenez Romero, A. Yegenoglu, A. Pérez Martín, S. Diaz-Pier, and A. Morrison, “Emergent communication enhances foraging behavior in evolved swarms controlled by spiking neural networks,” *Swarm Intell.*, vol. 18, no. 1, pp. 1–29, 2024, doi: [10.1007/s11721-023-00231-6](https://doi.org/10.1007/s11721-023-00231-6).
+
+[56] W. L. Leong, J. Cao, and R. Teo, “Scalable Task Allocation with Communications Connectivity for Flying Ad-Hoc Networks,” *J. Intell. Robot. Syst.*, vol. 110, no. 1, p. 10, 2024, doi: [10.1007/s10846-024-02059-6](https://doi.org/10.1007/s10846-024-02059-6).
+
+[57] M. Salman, D. Garzón Ramos, K. Hasselmann, and M. Birattari, “Phormica: Photochromic Pheromone Release and Detection System for Stigmergic Coordination in Robot Swarms,” *Front. Robot. AI*, vol. 7, no. December, pp. 1–15, 2020, doi: [10.3389/frobt.2020.591402](https://doi.org/10.3389/frobt.2020.591402).
+
+[58] R. De Nicola, L. Di Stefano, and O. Inverso, “Multi-agent systems with virtual stigmergy,” *Sci. Comput. Program.*, vol. 187, p. 102345, 2020, doi: [10.1016/j.scico.2019.102345](https://doi.org/10.1016/j.scico.2019.102345).
+
+[59] M. Salman, D. Garzón Ramos, and M. Birattari, “Automatic design of stigmergy-based behaviours for robot swarms,” *Commun. Eng.*, vol. 3, no. 1, pp. 1–13, 2024, doi: [10.1038/s44172-024-00175-7](https://doi.org/10.1038/s44172-024-00175-7).
+
+[60] N. Rahmoune and A. Rahmoune, “Efficient multi-robot exploration of unknown environments using inverted ant colony optimization and reinforcement learning,” *Appl. Comput. Sci.*, vol. 22, no. 1, pp. 140–153, 2026, doi: [10.35784/acs_7891](https://doi.org/10.35784/acs_7891).
+
+[61] Y. T. dos Passos, X. Duquesne, and L. S. Marcolino, “Congestion control algorithms for robotic swarms with a common target based on the throughput of the target area,” *Rob. Auton. Syst.*, vol. 159, p. 104284, 2023, doi: [10.1016/j.robot.2022.104284](https://doi.org/10.1016/j.robot.2022.104284).
+
+[62] Y. Zhou, Y. Tao, X. Lei, and X. Peng, “Self-organized swarm robot for multi-target trapping based on self-regulated density interaction,” *Inf. Sci. (Ny).*, vol. 661, no. September 2023, p. 120119, 2024, doi: [10.1016/j.ins.2024.120119](https://doi.org/10.1016/j.ins.2024.120119).
+
+[63] J. Zhao, S. Chen, P. Chi, and Y. Wang, “Dynamic merging and splitting for large-scale swarm navigation of UAVs and UGVs in unknown area,” *Rob. Auton. Syst.*, vol. 198, no. April 2025, p. 105337, 2026, doi: [10.1016/j.robot.2026.105337](https://doi.org/10.1016/j.robot.2026.105337).
+
+[64] Y. Zhou, L. Yan, Y. Zhao, S. Shu, Y. Han, and H. Xie, “EAME: Element-Aware Multi-UAV distributed autonomous exploration for efficient and complete under-canopy measurements,” *ISPRS J. Photogramm. Remote Sens.*, vol. 231, pp. 664–678, Jan. 2026, doi: [10.1016/j.isprsjprs.2025.11.016](https://doi.org/10.1016/j.isprsjprs.2025.11.016).
 
 ---
 *Developed with dedication to advancing research in Multi-Agent Systems and Swarm Robotics.*
