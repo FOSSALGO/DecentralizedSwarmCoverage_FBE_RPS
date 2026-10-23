@@ -24,7 +24,7 @@ import java.util.stream.Stream;
  */
 public final class Tester {
     // Change to "," if the target spreadsheet application uses comma-separated CSV.
-    private static String delimiter = ";";
+    private static final String delimiter = ";";
     private static final int SENSOR_RANGE_CELLS = 4; // CanvasView.sensorFoV
     private static final int CELL_SIZE = 10;         // MainView.cellSize; rendering-only
     private static final int MAX_ROWS = 200;        // CanvasView's file limits
