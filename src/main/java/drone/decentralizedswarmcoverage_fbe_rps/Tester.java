@@ -32,10 +32,8 @@ public final class Tester {
     private static final int EXPECTED_DRONES = 4;
     private static final int EXPECTED_SAMPLES = 100;
     private static final String COMPLETE = "ALL_REACHABLE_FREE_CELLS_OBSERVED";
-    private static final String PACKAGE_PATH =
-            "decentralizedswarmcoverage/frontierbasedexplorationandrepulsivepheromonestigmergy";
-    private static final DateTimeFormatter DATE_FORMAT =
-            DateTimeFormatter.ofPattern("yyyyMMddHHmmss", Locale.ROOT);
+    private static final String PACKAGE_PATH = "drone/decentralizedswarmcoverage_fbe_rps";
+    private static final DateTimeFormatter DATE_FORMAT = DateTimeFormatter.ofPattern("yyyyMMddHHmmss", Locale.ROOT);
 
     private static final List<String> CSV_COLUMNS = List.of(
             "Environment", "Sample ID", "Must Explored",
