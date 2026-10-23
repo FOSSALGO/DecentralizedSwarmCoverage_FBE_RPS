@@ -555,6 +555,12 @@ A standalone batch testing harness for rigorous empirical evaluation across larg
 
 The repository includes **100 standardized benchmark environment files** located within the `dataset/` directory, categorized into 5 challenging spatial topologies:
 
+<p align="center">
+  <img src="src/main/java/drone/decentralizedswarmcoverage_fbe_rps/dataset/Dataset%20Overview_%20100%20Environment%20Samples.png" alt="Dataset Overview: 100 Environment Samples" width="100%"/>
+  <br/>
+  <em>Figure 1: Comprehensive benchmark dataset overview comprising 100 environment samples across five distinct spatial topologies (S01 to S05) with Centered (C) and Dispersed (D) initial swarm configurations.</em>
+</p>
+
 ```
 src/main/java/drone/decentralizedswarmcoverage_fbe_rps/dataset/
 ├── S01_Open_Space/            # 20 Files: S01_G01_C.sc to S01_G10_D.sc
