@@ -1,0 +1,6 @@
+Topology;Revisit reduction mean pp;Revisit CI low;Revisit CI high;Overlap reduction mean pp;Overlap CI low;Overlap CI high;Saved steps mean;Saved steps CI low;Saved steps CI high
+Open Space;34.61;31.44;37.56;46.69;42.46;50.27;143.3;121.85;161.35
+Partitioned Rooms;35.83;32.1;39.53;47.93;40.57;54.22;121.85;82.15;165.4
+Branching Corridors;31.85;26.13;36.71;40.22;34.91;45.06;125.85;89.15;158.96
+Serpentine;23.48;17.57;30.63;34.91;26.81;43.45;76.6;7.4;151.05
+Bottleneck;39.36;33.87;43.99;54.57;48.97;59.91;195.15;127.59;250.65

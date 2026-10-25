@@ -1,0 +1,7 @@
+Topology;Samples;M1 faster;Tie;M1 slower;Mean saved steps;Median saved steps;IQR Q1;IQR Q3;Worst saved steps;Best saved steps;Mean revisit reduction pp;Mean overlap reduction pp
+Open Space;20;19;0;1;143.3;143.5;85.5;193.0;-3.0;281.0;34.61;46.69
+Partitioned Rooms;20;18;0;2;121.85;112.0;60.25;183.0;-18.0;299.0;35.83;47.93
+Branching Corridors;20;17;0;3;125.85;109.0;2.0;224.25;-79.0;332.0;31.85;40.22
+Serpentine;20;13;2;5;76.6;21.5;-18.25;188.25;-105.0;370.0;23.48;34.91
+Bottleneck;20;17;0;3;195.15;292.0;108.25;341.5;-390.0;398.0;39.36;54.57
+Overall;100;84;2;14;132.55;123.0;50.5;237.0;-390.0;398.0;33.03;44.86

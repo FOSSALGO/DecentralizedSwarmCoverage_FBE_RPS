@@ -1,0 +1,15 @@
+Environment;Sample ID;Must Explored;M0 Steps;M1 Steps;Saved steps M0-M1;Revisit reduction pp;Overlap reduction pp
+S05_Bottleneck;S05_G10_D;3800;306;696;-390;-10.67;-4.25
+S04_Serpentine;S04_G04_D;1720;296;401;-105;-0.88;-3.89
+S04_Serpentine;S04_G10_D;1720;296;399;-103;-0.89;-3.92
+S04_Serpentine;S04_G02_D;1690;291;392;-101;-0.93;-3.95
+S04_Serpentine;S04_G08_D;1660;286;387;-101;-0.81;-3.8
+S05_Bottleneck;S05_G07_D;3834;324;409;-85;8.3;7.53
+S03_Branching_Corridors;S03_G07_D;1570;266;345;-79;-2.22;-4.56
+S04_Serpentine;S04_G01_D;1440;122;195;-73;8.71;7.86
+S05_Bottleneck;S05_G01_D;3834;349;395;-46;17.39;17.87
+S02_Partitioned_Rooms;S02_G07_D;3960;586;604;-18;29.08;36.11
+S03_Branching_Corridors;S03_G09_D;1500;292;309;-17;13.01;18.18
+S02_Partitioned_Rooms;S02_G04_D;3912;518;532;-14;17.17;20.98
+S01_Open_Space;S01_G08_D;4020;627;630;-3;12.31;14.05
+S03_Branching_Corridors;S03_G03_D;1535;115;116;-1;15.32;16.17
